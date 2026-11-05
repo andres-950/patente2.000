@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patente Tecnológica - Sistema Háptico Visión Artificial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .pulse-haptic { animation: pulseHaptic 1.5s infinite; }
+        @keyframes pulseHaptic {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
+            70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-blue-500 selection:text-white">
+
+    <!-- HEADER -->
+    <header class="relative overflow-hidden border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 py-16 px-4">
+        <div class="max-w-5xl mx-auto text-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+                <i class="fa-solid fa-lightbulb"></i> Proyecto de Patente Tecnológica
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400 bg-clip-text text-transparent">
+                Sistema de Asistencia Predictiva y Háptica para Navegación Visual
+            </h1>
+            <p class="text-base md:text-lg text-slate-400 max-w-3xl mx-auto mb-8">
+                Tecnología portátil basada en Edge AI y retroalimentación táctil direccional para la autonomía segura de personas con discapacidad visual.
+            </p>
+
+            <div class="inline-block bg-slate-900/80 border border-slate-800 rounded-2xl p-6 backdrop-blur-md shadow-xl">
+                <p class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-3"><i class="fa-solid fa-users mr-1"></i> Equipo de Investigación y Desarrollo</p>
+                <div class="flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-300">
+                    <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">Leider Mena</span>
+                    <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">Paulina Zapata</span>
+                    <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">Ximena Peláez</span>
+                    <span class="bg-slate-800 px-3 py-1.5 rounded-lg border border-slate-700">Eterley Mejía</span>
+                </div>
+                <div class="mt-4 inline-block bg-blue-600/20 text-blue-300 px-4 py-1 rounded-full text-xs font-bold border border-blue-500/30">
+                    Grado: 11°3
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
+
+        <!-- PROBLEMA Y SOLUCIÓN -->
+        <section class="grid md:grid-cols-2 gap-8">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+                <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 text-xl mb-6">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-4 text-slate-200">El Problema</h2>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Los bastones blancos y perros guía no detectan obstáculos elevados (ramas, carteles colgantes, desniveles a la altura del torso) ni letreros o semáforos. Por otro lado, los anteojos inteligentes actuales saturan el sentido del oído con alertas de voz, impidiendo que el usuario escuche los autos y su entorno.
+                </p>
+            </div>
+
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-6">
+                    <i class="fa-solid fa-microchip"></i>
+                </div>
+                <h2 class="text-xl font-bold mb-4 text-slate-200">La Solución Patentable</h2>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    Un dispositivo portátil con <strong>Edge AI local</strong> que analiza el entorno y transmite alertas mediante una <strong>matriz háptica direccional</strong> (vibraciones sutiles en pulseras o montura). Reemplaza el ruido auditivo por un mapa táctil espacial intuitivo y privado.
+                </p>
+            </div>
+        </section>
+
+        <!-- CÓMO PATENTAR - SEGÚN LA SIC -->
+        <section class="space-y-6">
+            <h2 class="text-2xl font-bold text-center">Cómo Patentar un Invento según la SIC</h2>
+
+            <!-- 1. BÚSQUEDA -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">1. Realizar una Búsqueda Tecnológica - Anterioridad</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Qué hacer:</b> Revisa bases de datos globales de patentes como la de la SIC, Espacenet o Google Patents.</li>
+                    <li><b class="text-slate-200">Objetivo:</b> Asegurarte de que tu invento no exista ya en ningún lado del mundo, lo que evitará perder tiempo.</li>
+                </ul>
+            </div>
+
+            <!-- 2. TIPO -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">2. Definir Tipo de Patente</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Patente de invención:</b> Para productos o procedimientos totalmente nuevos. Ofrece protección por 20 años.</li>
+                    <li><b class="text-slate-200">Modelo de utilidad:</b> Para modificaciones, herramientas o mejoras a objetos ya existentes que le dan mejor función.</li>
+                </ul>
+            </div>
+
+            <!-- 3. REDACTAR -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">3. Redactar el Documento de Patente</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Descripción:</b> Explicación detallada, clara y completa de cómo fabricar o realizar la invención.</li>
+                    <li><b class="text-slate-200">Reivindicaciones:</b> Las frases legales que definen exactamente qué es lo que estás protegiendo.</li>
+                    <li><b class="text-slate-200">Resumen:</b> Una síntesis técnica de la invención.</li>
+                    <li><b class="text-slate-200">Dibujos:</b> Planos, esquemas o diagramas técnicos que complementen la descripción.</li>
+                </ul>
+            </div>
+
+            <!-- 4. RADICAR -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">4. Radicar la Solicitud y Pagar Tasas</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Qué hacer:</b> Ingresa a la plataforma virtual de la oficina de patentes.</li>
+                    <li><b class="text-slate-200">Acción:</b> Diligencia los formularios oficiales, adjunta el documento de la patente y realiza el pago de la tasa de presentación.</li>
+                </ul>
+            </div>
+
+            <!-- 5. EXAMEN -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">5. Examen de Forma</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Qué hacer:</b> La entidad revisará la solicitud los primeros meses para verificar que cumpla con los requisitos formales.</li>
+                </ul>
+            </div>
+
+            <!-- 6. PUBLICACIÓN -->
+            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                <h3 class="font-bold text-blue-400 mb-3">6. Publicación en la Gaceta Oficial</h3>
+                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
+                    <li><b class="text-slate-200">Objetivo:</b> Dar un plazo de tiempo establecido para que cualquier tercero pueda oponerse si considera que el invento le pertenece o no cumple con los requisitos.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SIMULADOR -->
+        <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none text-blue-500 text-9xl">
+                <i class="fa-solid fa-brain"></i>
+            </div>
+            
+            <div class="max-w-xl mb-8">
+                <span class="text-xs font-bold text-blue-400 uppercase tracking-widest"><i class="fa-solid fa-play mr-1"></i> Demostración Interactiva</span>
+                <h2 class="text-2xl font-bold mt-1">Simulador de Respuesta Háptica y Visión Artificial</h2>
+                <p class="text-sm text-slate-400 mt-2">Prueba cómo reaccionaría el sistema ante diferentes escenarios urbanos detectados por la cámara local.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="space-y-4">
+                    <label class="block text-xs font-semibold text-slate-300 uppercase">Selecciona el obstáculo detectado:</label>
+                    <div class="grid grid-cols-1 gap-2.5">
+                        <button onclick="triggerSimulation('rama', 'Rama de árbol a la altura de la cabeza (Derecha)', 'Vibración fuerte superior derecha')" class="text-left px-4 py-3 rounded-xl bg-slate-800 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500 transition text-sm font-medium flex items-center justify-between group">
+                            <span><i class="fa-solid fa-tree text-amber-400 mr-2"></i> Rama colgante (Superior Derecha)</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-blue-400"></i>
+                        </button>
+                        <button onclick="triggerSimulation('bache', 'Desnivel / Bache en el pavimento (Centro-Bajo)', 'Vibración rítmica inferior')" class="text-left px-4 py-3 rounded-xl bg-slate-800 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500 transition text-sm font-medium flex items-center justify-between group">
+                            <span><i class="fa-solid fa-road text-red-400 mr-2"></i> Bache en suelo (Inmediato)</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-blue-400"></i>
+                        </button>
+                        <button onclick="triggerSimulation('semaforo', 'Semáforo en Verde (Modo Exploración)', 'Doble pulso táctil de confirmación')" class="text-left px-4 py-3 rounded-xl bg-slate-800 hover:bg-blue-600/20 border border-slate-700 hover:border-blue-500 transition text-sm font-medium flex items-center justify-between group">
+                            <span><i class="fa-solid fa-traffic-light text-emerald-400 mr-2"></i> Semáforo en Verde</span>
+                            <i class="fa-solid fa-chevron-right text-xs text-slate-500 group-hover:text-blue-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center flex flex-col items-center justify-center min-h-[220px]">
+                    <div id="hapticIcon" class="w-16 h-16 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500 text-2xl mb-4 transition-all duration-300">
+                        <i class="fa-solid fa-hand-holding-medical"></i>
+                    </div>
+                    <h3 id="simTitle" class="text-sm font-bold text-slate-300">Esperando evento del entorno...</h3>
+                    <p id="simDesc" class="text-xs text-slate-500 mt-1">Haz clic en un botón de la izquierda para simular la respuesta del dispositivo.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-900 mt-20 py-8 text-center text-xs text-slate-500">
+        <p>Proyecto de Patente Escolar &bull; Grado 11°3 &bull; Leider Mena, Paulina Zapata, Ximena Peláez, Eterley Mejía</p>
+        <p class="mt-2">Fuente: Superintendencia de Industria y Comercio - SIC Colombia - sic.gov.co</p>
+    </footer>
+
+    <script>
+        function triggerSimulation(type, title, feedback) {
+            const iconDiv = document.getElementById('hapticIcon');
+            const titleEl = document.getElementById('simTitle');
+            const descEl = document.getElementById('simDesc');
+
+            iconDiv.className = "w-16 h-16 rounded-full bg-emerald-500/20 border border-emerald-500/50 flex items-center justify-center text-emerald-400 text-2xl mb-4 pulse-haptic";
+            
+            if(type === 'rama') {
+                iconDiv.innerHTML = '<i class="fa-solid fa-tree"></i>';
+            } else if(type === 'bache') {
+                iconDiv.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+            } else {
+                iconDiv.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            }
+
+            titleEl.textContent = title;
+            descEl.textContent = "Señal Háptica Generada: " + feedback;
+        }
+    </script>
+</body>
+</html>
