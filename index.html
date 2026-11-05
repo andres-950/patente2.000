@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glow-effect { box-shadow: 0 0 25px rgba(59, 130, 246, 0.3); }
         .pulse-haptic { animation: pulseHaptic 1.5s infinite; }
         @keyframes pulseHaptic {
             0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); }
@@ -19,9 +20,9 @@
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen selection:bg-blue-500 selection:text-white">
 
-    <!-- HEADER -->
+    <!-- Header / Hero Section -->
     <header class="relative overflow-hidden border-b border-slate-800 bg-gradient-to-b from-slate-900 to-slate-950 py-16 px-4">
-        <div class="max-w-5xl mx-auto text-center">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
             <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
                 <i class="fa-solid fa-lightbulb"></i> Proyecto de Patente Tecnológica
             </span>
@@ -32,6 +33,7 @@
                 Tecnología portátil basada en Edge AI y retroalimentación táctil direccional para la autonomía segura de personas con discapacidad visual.
             </p>
 
+            <!-- Credenciales del Equipo -->
             <div class="inline-block bg-slate-900/80 border border-slate-800 rounded-2xl p-6 backdrop-blur-md shadow-xl">
                 <p class="text-xs font-bold uppercase tracking-wider text-blue-400 mb-3"><i class="fa-solid fa-users mr-1"></i> Equipo de Investigación y Desarrollo</p>
                 <div class="flex flex-wrap justify-center gap-3 text-sm font-medium text-slate-300">
@@ -47,12 +49,58 @@
         </div>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+    <div class="busquedad">
+        <h2>REALIZAR UNA BUSQUEDAD TECNOLOGICA-Anterioridad</h2>
+        <ul>
+            <li>>Que hacer: Revisa bases de datos globales de patentes como la de la SIC, Espacenet o Google Patents. </li>
+            <li>Objetivo:Asegurarte de que tu invento no exista ya en ningun lado del mundo, lo que evitara perder tiempo.</li>
+        </ul>
+    </div>
+
+    <div class="tipo-patente">
+        <h2>DEFINIR TIPO DE PATENTE</h2>
+        <p>Patente de invencion: Para productos o procedimientos totalmente nuevos ofrece proteccion por 20 años</p>
+        <p>Modelo de Utilidad:Paa modificaciones, herramientas o mejoras a objetos ya existentes que le dan mejor funcion.</p>
+
+        <div class="redactar">
+            <h2>REDACTAR EL DOCUMENTO DE PATENTE</h2>
+            <ul>
+                <li>Descipcion:Explicacion detallada, clara y completa de como fabricar o realizar la invencion.</li>
+                <li>reivindicaciones:Las frases legales que definen exactamente que es lo que estas protegiendo</li>
+                <li>Resumen: Una sintesis tecnica de la invencion.</li>
+                <li>Dibujos:Planos, esquemas o diagramas tecnicos que complementen la descripciom.</li>
+            </ul>
+        </div>
+
+        <div class="radicar">
+            <h2>REDACTAR LA SOLICITUD Y PAGAR TASAS</h2>
+            <ul>
+                <li>Que hacer: Ingresa a la plataforma virtual de la oficina de patentes.</li>
+                <li>Accion: Digilencia los formularios oficiales, adjunta el decumento de la patente y realiza el pago de la tasa de prestacion.</li>
+            </ul>
+        </div>
+
+        <div class="EXAMEN">
+            <h2>EXAMEN DE FORMA</h2>
+            <ul>
+                <li>Que hacer: La identidad revisara la solicitud los primeros meses para verificar que cumpla con los requisitos formales.</li>
+            </ul>
+        </div>
+
+        <div class="publicacion">
+            <h2>Publicacion en la Gaceta Oficial</h2>
+            <ul>
+                <li>Objetivo: Dar un plazo de tiempo establecido para que cualquier tercero pueda oponerse si considera que el invento le pertenece o no cumple con los requisitos.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content -->
     <main class="max-w-5xl mx-auto px-4 py-12 space-y-16">
 
-        <!-- PROBLEMA Y SOLUCIÓN -->
+        <!-- Sección: Problema y Solución -->
         <section class="grid md:grid-cols-2 gap-8">
-            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm">
                 <div class="w-12 h-12 rounded-xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 text-xl mb-6">
                     <i class="fa-solid fa-triangle-exclamation"></i>
                 </div>
@@ -62,7 +110,7 @@
                 </p>
             </div>
 
-            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8">
+            <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-8 backdrop-blur-sm">
                 <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl mb-6">
                     <i class="fa-solid fa-microchip"></i>
                 </div>
@@ -73,66 +121,7 @@
             </div>
         </section>
 
-        <!-- CÓMO PATENTAR - SEGÚN LA SIC -->
-        <section class="space-y-6">
-            <h2 class="text-2xl font-bold text-center">Cómo Patentar un Invento según la SIC</h2>
-
-            <!-- 1. BÚSQUEDA -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">1. Realizar una Búsqueda Tecnológica - Anterioridad</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Qué hacer:</b> Revisa bases de datos globales de patentes como la de la SIC, Espacenet o Google Patents.</li>
-                    <li><b class="text-slate-200">Objetivo:</b> Asegurarte de que tu invento no exista ya en ningún lado del mundo, lo que evitará perder tiempo.</li>
-                </ul>
-            </div>
-
-            <!-- 2. TIPO -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">2. Definir Tipo de Patente</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Patente de invención:</b> Para productos o procedimientos totalmente nuevos. Ofrece protección por 20 años.</li>
-                    <li><b class="text-slate-200">Modelo de utilidad:</b> Para modificaciones, herramientas o mejoras a objetos ya existentes que le dan mejor función.</li>
-                </ul>
-            </div>
-
-            <!-- 3. REDACTAR -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">3. Redactar el Documento de Patente</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Descripción:</b> Explicación detallada, clara y completa de cómo fabricar o realizar la invención.</li>
-                    <li><b class="text-slate-200">Reivindicaciones:</b> Las frases legales que definen exactamente qué es lo que estás protegiendo.</li>
-                    <li><b class="text-slate-200">Resumen:</b> Una síntesis técnica de la invención.</li>
-                    <li><b class="text-slate-200">Dibujos:</b> Planos, esquemas o diagramas técnicos que complementen la descripción.</li>
-                </ul>
-            </div>
-
-            <!-- 4. RADICAR -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">4. Radicar la Solicitud y Pagar Tasas</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Qué hacer:</b> Ingresa a la plataforma virtual de la oficina de patentes.</li>
-                    <li><b class="text-slate-200">Acción:</b> Diligencia los formularios oficiales, adjunta el documento de la patente y realiza el pago de la tasa de presentación.</li>
-                </ul>
-            </div>
-
-            <!-- 5. EXAMEN -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">5. Examen de Forma</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Qué hacer:</b> La entidad revisará la solicitud los primeros meses para verificar que cumpla con los requisitos formales.</li>
-                </ul>
-            </div>
-
-            <!-- 6. PUBLICACIÓN -->
-            <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                <h3 class="font-bold text-blue-400 mb-3">6. Publicación en la Gaceta Oficial</h3>
-                <ul class="list-disc pl-5 space-y-2 text-sm text-slate-400">
-                    <li><b class="text-slate-200">Objetivo:</b> Dar un plazo de tiempo establecido para que cualquier tercero pueda oponerse si considera que el invento le pertenece o no cumple con los requisitos.</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- SIMULADOR -->
+        <!-- Simulador Interactivo de la Patente -->
         <section class="bg-slate-900 border border-slate-800 rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
             <div class="absolute top-0 right-0 p-8 opacity-10 pointer-events-none text-blue-500 text-9xl">
                 <i class="fa-solid fa-brain"></i>
@@ -145,6 +134,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Controles -->
                 <div class="space-y-4">
                     <label class="block text-xs font-semibold text-slate-300 uppercase">Selecciona el obstáculo detectado:</label>
                     <div class="grid grid-cols-1 gap-2.5">
@@ -163,6 +153,7 @@
                     </div>
                 </div>
 
+                <!-- Panel de Estado / Feedback Háptico -->
                 <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 text-center flex flex-col items-center justify-center min-h-[220px]">
                     <div id="hapticIcon" class="w-16 h-16 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-500 text-2xl mb-4 transition-all duration-300">
                         <i class="fa-solid fa-hand-holding-medical"></i>
@@ -175,12 +166,12 @@
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- Footer -->
     <footer class="border-t border-slate-900 mt-20 py-8 text-center text-xs text-slate-500">
         <p>Proyecto de Patente Escolar &bull; Grado 11°3 &bull; Leider Mena, Paulina Zapata, Ximena Peláez, Eterley Mejía</p>
-        <p class="mt-2">Fuente: Superintendencia de Industria y Comercio - SIC Colombia - sic.gov.co</p>
     </footer>
 
+    <!-- Script de Interactividad -->
     <script>
         function triggerSimulation(type, title, feedback) {
             const iconDiv = document.getElementById('hapticIcon');
